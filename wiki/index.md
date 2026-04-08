@@ -24,6 +24,7 @@ Active projects we're building or maintaining. **Each agent only reads wiki page
 | PrintsbyTee | [[printsbytee-website-review-2026-04-08]] | Website review notes | 2026-04-08 |
 | Suleclaw Agency | [[suleclaw-agency]] | Creative agency website (Industrial Noir design) | 2026-04-08 |
 | GetRoleUp | [[getroleup]] | Structured learning platform (26 career tracks) | 2026-04-08 |
+| GetRoleUp | [[getroleup-youtube-ad]] | YouTube ad launch video — 55s Remotion ad, rendered + delivered | 2026-04-08 |
 | Mario Platformer | [[mario-platformer]] | Phaser 3 platformer for Dami's kids | 2026-04-08 |
 | Mario Platformer | [[super-mushroom-powerup]] | Grow power-up, forgiving hitbox for young kids | 2026-04-08 |
 | Mario Platformer | [[celebration-everywhere]] | Particles, flashes, sounds — no scary game over | 2026-04-08 |
