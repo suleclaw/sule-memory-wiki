@@ -1,0 +1,23 @@
+title: Sule Memory Wiki
+description: Personal knowledge base powered by AI
+theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+collections:
+  wiki:
+    output: true
+    permalink: /wiki/:path/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "wiki"
+    values:
+      layout: page
+include: [".gitkeep"]
+permalink: /:title/
+future: true
