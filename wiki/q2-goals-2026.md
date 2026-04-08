@@ -3,7 +3,7 @@ title: Q2 Goals 2026
 created: 2026-04-06
 updated: 2026-04-08
 tags: [goals, q2-2026, personal, projects]
-related: [[morning-briefing]], [[linear-projects]]
+related: [[morning-briefing]]
 ---
 
 # Q2 Goals 2026

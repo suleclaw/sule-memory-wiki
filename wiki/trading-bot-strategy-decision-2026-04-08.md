@@ -3,7 +3,7 @@ title: Trading Bot Strategy Decision
 created: 2026-04-08
 updated: 2026-04-08
 tags: [trading-bot, decision, trailing-stops, options-wheel]
-related: [[trading-bot]], [[wheel-strategy]], [[alpaca-api]]
+related: [[trading-bot]]
 ---
 
 # Trading Bot Strategy Decision

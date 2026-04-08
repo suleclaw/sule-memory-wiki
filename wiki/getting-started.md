@@ -72,9 +72,9 @@ See [[SCHEMA]] for the full spec.
 
 | Section | What it covers |
 |---------|---------------|
-| [[Projects]] | trading-bot, printsbytee, suleclaw-agency, getroleup |
-| [[Technical]] | alpaca-api, capitol-trades, youtube-pipeline |
-| [[Learning]] | q2-goals-2026, scaling-school |
-| [[AI & Knowledge]] | llm-wiki-karpathy-system, memory-system |
+| Projects | trading-bot, printsbytee, suleclaw-agency, getroleup |
+| Technical | alpaca-api, capitol-trades, youtube-pipeline |
+| Learning | q2-goals-2026, scaling-school |
+| AI & Knowledge | llm-wiki-karpathy-system, memory-system |
 
-Browse all → [[wiki/index]]
+Browse all → [[index]]

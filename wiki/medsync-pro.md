@@ -3,7 +3,7 @@ title: MedSync Pro
 created: 2026-03-30
 updated: 2026-04-08
 tags: [project, healthcare, react, supabase, booking]
-related: [[medsync-pro-booking-design]], [[medsync-pro-spec]], [[supabase-postgres-best-practices]]
+related: []
 ---
 
 # MedSync Pro

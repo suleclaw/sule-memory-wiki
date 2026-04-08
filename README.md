@@ -26,10 +26,10 @@ Every conversation triggers filing. Key decisions are captured with context and 
 
 | Section | Pages |
 |---------|-------|
-| [[Projects]] | trading-bot, printsbytee-mvp, suleclaw-agency, getroleup |
-| [[Technical]] | alpaca-api, capitol-trades, youtube-pipeline, obsidian-setup |
-| [[Learning]] | q2-goals-2026, scaling-school |
-| [[AI & Knowledge]] | llm-wiki-karpathy-system, memory-system |
+| Projects | trading-bot, printsbytee-mvp, suleclaw-agency, getroleup |
+| Technical | alpaca-api, capitol-trades, youtube-pipeline, obsidian-setup |
+| Learning | q2-goals-2026, scaling-school |
+| AI & Knowledge | llm-wiki-karpathy-system, memory-system |
 
 Full index → [[wiki/index]]
 

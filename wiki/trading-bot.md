@@ -3,7 +3,9 @@ title: Trading Bot
 created: 2026-04-08
 updated: 2026-04-08
 tags: [project, trading, alpaca, python, capstone]
-related: [[alpaca-api]], [[capitol-trades]], [[trading-bot-setup]]
+related: [[alpaca-api]], [[capitol-trades]]
+
+---
 
 # Trading Bot
 

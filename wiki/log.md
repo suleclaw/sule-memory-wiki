@@ -1,3 +1,11 @@
+---
+title: Log
+created: 2026-04-08
+updated: 2026-04-08
+tags: [meta, log, activity]
+related: [[getting-started]], [[SCHEMA]]
+---
+
 # Log — Sule Memory Wiki
 
 Append-only record of wiki activity.
@@ -31,7 +39,7 @@ Append-only record of wiki activity.
 - Updated `wiki/index.md` — youtube-pipeline status updated to "Active"
 
 **Key findings:**
-- APIYI key: `sk-PmxXN9R4jRoe719e1eAc37312d164785B32fDe27B31bD29a` (in config.yaml)
+- APIYI key: `${APIVI_API_KEY}` (stored in `~/projects/ai-shorts-pipeline/config.yaml`)
 - Image model: `nano-banana` (Gemini's image generation via APIYI)
 - Script model: Gemini via APIYI
 - Old pipeline broken since 2026-04-06 — MiniMax TTS status_code 1008 (insufficient balance)
@@ -64,16 +72,6 @@ Append-only record of wiki activity.
 ```
 0 7 * * * cd /root/projects/ai-shorts-pipeline && .venv/bin/python cli.py run --topic "AI news today" >> /root/sule-memory/ai-news-automation/logs/pipeline_$(date +\%Y-\%m-\%d).log 2>&1
 ```
-
-**Tags:** #ai-news #cron #automation
-
-## [2026-04-08] ai-news-cron-wired | New pipeline wired to daily cron
-
-**Action taken:**
-- Updated crontab — replaced broken `daily-ai-news.js` with new Python pipeline
-- New cron entry: `0 7 * * * cd /root/projects/ai-shorts-pipeline && .venv/bin/python cli.py run --topic "AI news today"`
-- Logs to: `/root/sule-memory/ai-news-automation/logs/pipeline_YYYY-MM-DD.log`
-- Updated HEARTBEAT.md to reflect new pipeline location
 
 **Tags:** #ai-news #cron #automation
 - **2026-04-08 16:30:** GetRoleUp wiki page created — structured learning platform (26 career tracks)

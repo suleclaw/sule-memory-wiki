@@ -3,7 +3,7 @@ title: AI News Shorts Pipeline
 created: 2026-04-06
 updated: 2026-04-08
 tags: [ai-news, youtube, pipeline, automation]
-related: [[youtube-pipeline]], [[q2-goals-2026]]
+related: [[q2-goals-2026]]
 ---
 
 # AI News Shorts Pipeline
@@ -49,7 +49,7 @@ Channel: [AI In 90 Seconds](https://www.youtube.com/channel/UC9iF_DF6Vcu6vTNUycg
 | Upload | YouTube Data API v3 | Free | Private by default |
 
 **Image generation model:** `nano-banana` (Gemini's image model via APIYI provider)
-**Script model:** Gemini via APIYI (`sk-PmxXN9R4jRoe719e1eAc37312d164785B32fDe27B31bD29a`)
+**Script model:** Gemini via APIYI (`${APIVI_API_KEY}`)
 
 ---
 
@@ -133,6 +133,7 @@ Current default: `en-GB-SoniaNeural` at 1.1x speed (news delivery pace)
 | 2026-04-07 | PrintsbyTee MVP shipped, trading bot launched |
 | 2026-04-08 | New Python pipeline built and tested with APIYI + nano-banana |
 | 2026-04-08 | Dami tested APIYI + nano-banana for image generation — confirmed working |
+| 2026-04-08 | New pipeline wired to cron — replaced broken `daily-ai-news.js` |
 
 ---
 

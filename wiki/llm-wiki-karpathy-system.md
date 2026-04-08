@@ -3,7 +3,7 @@ title: LLM Wiki - Karpathy System
 created: 2026-04-08
 updated: 2026-04-08
 tags: [ai, knowledge-management, second-brain, andre-karpathy, llm]
-related: [[ai-agent-automation]], [[personal-knowledge-base]], [[memory-system]]
+related: [[memory-system]], [[morning-briefing]]
 ---
 
 # LLM Wiki - Karpathy System

@@ -1,3 +1,11 @@
+---
+title: Agent Workflow Updates
+created: 2026-04-08
+updated: 2026-04-08
+tags: [meta, agents, opencode, workflow]
+related: [[getting-started]], [[log]]
+---
+
 # Agent Workflow Updates (2026-04-08)
 
 ## Summary
