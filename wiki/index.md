@@ -13,7 +13,8 @@ The master catalog of all pages in this wiki.
 
 ## Projects
 
-- [[trading-bot]] — Python trading bot copying US politician trades via Alpaca + Capitol Trades
+- [[trading-bot]] — Python trading bot with trailing stops + options wheel (Alpaca paper trading)
+- [[trading-bot-strategy-decision-2026-04-08]] — Decision to drop copy trading, focus on wheel + trailing stops
 - [[printsbytee-mvp]] — Afro-Luxe fashion e-commerce MVP (merged 2026-04-07)
 - [[getroleup]] — Structured learning platform with 26 career tracks
 - [[suleclaw-agency]] — Creative agency website (Industrial Noir design shipped)

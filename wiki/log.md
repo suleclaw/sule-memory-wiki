@@ -24,6 +24,25 @@ Append-only record of wiki activity.
 
 ---
 
+## [2026-04-08] decision | Drop copy trading — focus on trailing stops + options wheel
+
+**Source:** DM with Dami — explicit decision to remove copy trading
+
+**Action taken:**
+- Created `wiki/trading-bot-strategy-decision-2026-04-08.md`
+- Updated `wiki/index.md` — updated trading-bot description
+- Plan: update trading-bot README, add wheel strategy to scheduler
+
+**Key decisions:**
+- Copy trading PARKED — Capitol Trades API inaccessible without auth
+- Focus: trailing stops (risk management) + options wheel (income)
+- Dami stops running bot locally — Sule sends Telegram + Discord updates
+- Updates to #trading-bot Discord channel (1491401295960080455)
+
+**Tags:** #trading-bot #strategy #wheel-strategy
+
+---
+
 ## [2026-04-08] system | Wiki initialized
 
 - GitHub repo created and cloned locally to `/root/sule-memory-wiki`
