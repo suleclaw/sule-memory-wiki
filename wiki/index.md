@@ -25,6 +25,10 @@ Active projects we're building or maintaining. **Each agent only reads wiki page
 | Suleclaw Agency | [[suleclaw-agency]] | Creative agency website (Industrial Noir design) | 2026-04-08 |
 | GetRoleUp | [[getroleup]] | Structured learning platform (26 career tracks) | 2026-04-08 |
 | Mario Platformer | [[mario-platformer]] | Phaser 3 platformer for Dami's kids | 2026-04-08 |
+| Mario Platformer | [[super-mushroom-powerup]] | Grow power-up, forgiving hitbox for young kids | 2026-04-08 |
+| Mario Platformer | [[celebration-everywhere]] | Particles, flashes, sounds — no scary game over | 2026-04-08 |
+| Mario Platformer | [[unlockable-characters]] | 6 color variants unlocked via gameplay | 2026-04-08 |
+| Mario Platformer | [[hidden-coins-meta-goal]] | Secret coins → unlock Rainbow Mario | 2026-04-08 |
 | MedSync Pro | [[medsync-pro]] | Clinical appointment booking system | 2026-04-08 |
 
 ---
@@ -61,6 +65,7 @@ Systems, tools, and research for building knowledge.
 |------|---------|---------|
 | [[llm-wiki-karpathy-system]] | Andre Karpathy's personal wiki system for second brain | 2026-04-08 |
 | [[memory-system]] | Sule's current memory and context system | 2026-04-08 |
+| [[session-greeting-fix]] | Fixed greeting to lead with current project context, not global dump | 2026-04-08 |
 
 ---
 
