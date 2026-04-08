@@ -4,7 +4,6 @@ created: 2026-04-08
 updated: 2026-04-08
 tags: [project, trading, alpaca, python, capstone]
 related: [[alpaca-api]], [[capitol-trades]], [[trading-bot-setup]]
----
 
 # Trading Bot
 
@@ -30,7 +29,7 @@ Python agent that copies US politician stock trades via Capitol Trades, executes
 - `wheel_strategy.py` — options wheel engine (CSP + covered calls)
 - `alpaca_client.py` — Alpaca API wrapper
 - `capitol_trades.py` — politician trade fetcher
-- `scheduler.py` — continuous scheduler
+- `scheduler.py` — continuous scheduler with wheel automation ✅ **RECENT**
 - README, .env.example, pyproject.toml
 
 **Positions (paper trading):**
@@ -41,9 +40,20 @@ Python agent that copies US politician stock trades via Capitol Trades, executes
 - GOOGL: 14 @ $316.78
 - All have 10% stop loss + trailing stop configured
 
+**Wheel Positions (active covered calls):**
+| Symbol | Strike | Premium | Expires |
+|--------|--------|---------|---------|
+| AAPL | $282.84 | $771.39 | 2026-04-29 |
+| GOOGL | $348.19 | $949.62 | 2026-04-29 |
+| MSFT | $421.17 | $1,148.66 | 2026-04-29 |
+| NVDA | $201.76 | $550.27 | 2026-04-29 |
+| TSLA | $391.90 | $1,068.83 | 2026-04-29 |
+
 **Backlog:**
+- SUL-52: Wheel automation in scheduler ✅ MERGED
+- SUL-51: Local dev setup — DONE
 - SUL-50: Real Capitol Trades API (blocked on cloud IPs — need local dev)
-- SUL-51: Local dev setup instructions
+- SUL-48: Options wheel strategy — DONE
 
 ## Key Blocker
 
