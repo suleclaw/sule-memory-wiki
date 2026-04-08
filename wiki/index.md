@@ -3,7 +3,7 @@ title: Wiki Index
 created: 2026-04-08
 updated: 2026-04-08
 tags: [meta, documentation, index]
-related: [[getting-started]], [[SCHEMA]], [[memory-system]]
+related: [[getting-started]], [[SCHEMA]], [[memory-system]], [[agent-workflow-updates-2026-04-08]]
 ---
 
 # Wiki Index
@@ -44,6 +44,7 @@ APIs, tools, integrations, and technical research.
 | [[capitol-trades]] | Politician trade data source — blocked on cloud IPs | 2026-04-08 |
 | [[youtube-pipeline]] | AI news short video pipeline — Edge TTS new pipeline ready | 2026-04-08 |
 | [[obsidian-setup]] | Obsidian configuration and plugins for wiki sync | 2026-04-08 |
+| [[agent-workflow-updates-2026-04-08]] | code-review-js + software-architect agent updates — opencode gpt-5.3-codex and opus-4.6 | 2026-04-08 |
 
 ---
 
@@ -83,6 +84,7 @@ About the wiki itself.
 
 ## 📅 Recent Activity
 
+- **2026-04-08:** Agent workflow updates — code-review-js spawns opencode gpt-5.3-codex, software-architect created with opus-4.6
 - **2026-04-08:** Wiki restructured — added getting-started guide, improved index, better README
 - **2026-04-08:** trading-bot strategy decision (drop copy trading)
 - **2026-04-07:** PrintsbyTee MVP shipped
