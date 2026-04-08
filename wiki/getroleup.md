@@ -83,3 +83,9 @@ related: [[q2-goals-2026]], [[scaling-school]]
 
 - Dami is collaborating with CyberDexa on this project
 - Project may align with Q2 goal of launching a SaaS MVP
+
+## Sub-pages
+
+| Sub-page | Summary |
+|----------|---------|
+| [[getroleup-youtube-ad]] | 55s Remotion launch ad — rendered + delivered |

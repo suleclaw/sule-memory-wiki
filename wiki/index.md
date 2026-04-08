@@ -3,7 +3,7 @@ title: Wiki Index
 created: 2026-04-08
 updated: 2026-04-08
 tags: [meta, documentation, index]
-related: [[getting-started]], [[log]], [[SCHEMA]]
+related: [[getting-started]], [[log]]
 ---
 
 # Wiki Index
@@ -13,12 +13,6 @@ All pages in the Sule Memory Wiki. Last updated: 2026-04-08.
 ---
 
 ## Projects
-
-### Trading Bot
-| Page | Summary | Status |
-|------|---------|--------|
-| [[trading-bot]] | Python bot — trailing stops + options wheel (Alpaca paper trading) | Active |
-| [[trading-bot-strategy-decision-2026-04-08]] | Decision: drop copy trading, focus on wheel + trailing stops | Decision Log |
 
 ### GetRoleUp
 | Page | Summary | Status |
@@ -35,6 +29,11 @@ All pages in the Sule Memory Wiki. Last updated: 2026-04-08.
 | [[unlockable-characters]] | 6 color variants unlocked via gameplay | Todo |
 | [[hidden-coins-meta-goal]] | Secret coins → unlock Rainbow Mario | Todo |
 
+### MedSync Pro
+| Page | Summary | Status |
+|------|---------|--------|
+| [[medsync-pro]] | Clinical appointment booking system — Phase 1 done | Active |
+
 ### PrintsbyTee
 | Page | Summary | Status |
 |------|---------|--------|
@@ -46,10 +45,11 @@ All pages in the Sule Memory Wiki. Last updated: 2026-04-08.
 |------|---------|--------|
 | [[suleclaw-agency]] | Creative agency website (Industrial Noir design) | Shipped |
 
-### MedSync Pro
+### Trading Bot
 | Page | Summary | Status |
 |------|---------|--------|
-| [[medsync-pro]] | Clinical appointment booking system — Phase 1 done | Active |
+| [[trading-bot]] | Python bot — trailing stops + options wheel (Alpaca paper trading) | Active |
+| [[trading-bot-strategy-decision-2026-04-08]] | Decision: drop copy trading, focus on wheel + trailing stops | Decision Log |
 
 ---
 
@@ -57,11 +57,11 @@ All pages in the Sule Memory Wiki. Last updated: 2026-04-08.
 
 | Page | Summary | Updated |
 |------|---------|---------|
-| [[youtube-pipeline]] | AI news shorts pipeline — Edge TTS, daily cron | 2026-04-08 |
 | [[alpaca-api]] | Alpaca paper trading API — setup, endpoints, rate limits | 2026-04-08 |
 | [[capitol-trades]] | Politician trade data source — blocked on cloud IPs | 2026-04-08 |
-| [[wheel-strategy]] | Options wheel strategy — CSP + covered calls | 2026-04-08 |
 | [[obsidian-setup]] | Obsidian vault configuration and plugins | 2026-04-08 |
+| [[wheel-strategy]] | Options wheel strategy — CSP + covered calls | 2026-04-08 |
+| [[youtube-pipeline]] | AI news shorts pipeline — Edge TTS, daily cron | 2026-04-08 |
 
 ---
 
@@ -78,10 +78,11 @@ All pages in the Sule Memory Wiki. Last updated: 2026-04-08.
 
 | Page | Summary | Updated |
 |------|---------|---------|
+| [[getting-started]] | How to use and contribute to this wiki | 2026-04-08 |
 | [[llm-wiki-karpathy-system]] | Karpathy's personal wiki system for second brain | 2026-04-08 |
 | [[memory-system]] | Sule's memory architecture — wiki + session + workspace layers | 2026-04-08 |
-| [[session-greeting-fix]] | Fixed greeting to lead with project context, not global dump | 2026-04-08 |
 | [[morning-briefing]] | Automated daily standup to Discord project channels | 2026-04-08 |
+| [[session-greeting-fix]] | Fixed greeting to lead with project context, not global dump | 2026-04-08 |
 
 ---
 
@@ -89,9 +90,10 @@ All pages in the Sule Memory Wiki. Last updated: 2026-04-08.
 
 | Page | Summary | Updated |
 |------|---------|---------|
-| [[getting-started]] | How to use and contribute to this wiki | 2026-04-08 |
 | [[agent-workflow-updates-2026-04-08]] | code-review-js + software-architect agent configs | 2026-04-08 |
+| [[getting-started]] | How to use and contribute to this wiki | 2026-04-08 |
 | [[log]] | Append-only activity log | 2026-04-08 |
+| [[wiki-cleanup-proposal-opus]] | Full wiki audit — broken links, duplicates, orphaned pages | 2026-04-08 |
 
 ---
 

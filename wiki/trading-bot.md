@@ -79,3 +79,12 @@ uv run python trading_bot.py
 - [[alpaca-api]]
 - [[capitol-trades]]
 - [[wheel-strategy]]
+
+## Sub-pages
+
+| Sub-page | Summary |
+|----------|---------|
+| [[alpaca-api]] | Alpaca paper trading API — setup, endpoints, rate limits |
+| [[capitol-trades]] | Politician trade data source — blocked on cloud IPs |
+| [[wheel-strategy]] | Options wheel strategy — CSP + covered calls |
+| [[trading-bot-strategy-decision-2026-04-08]] | Decision: drop copy trading, focus on wheel + trailing stops |

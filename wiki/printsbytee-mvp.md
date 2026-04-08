@@ -56,3 +56,9 @@ See: [[printsbytee-website-review-2026-04-08]] for full issue list (20 issues, 5
 - **Positioning:** Afro-Luxe — premium African-inspired fashion
 - **Price range:** £185–£205
 - **Target customer:** Style-conscious women who value quality and cultural authenticity
+
+## Sub-pages
+
+| Sub-page | Summary |
+|----------|---------|
+| [[printsbytee-website-review-2026-04-08]] | Website review — 20 issues, photos + checkout are critical |

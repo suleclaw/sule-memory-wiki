@@ -41,3 +41,12 @@ Simple 2D platformer designed to run in a browser. The target use case is an Ama
 
 - Very low maintenance — shipped and done
 - No active development planned unless kids request features
+
+## Sub-pages
+
+| Sub-page | Summary |
+|----------|---------|
+| [[super-mushroom-powerup]] | Grow power-up with forgiving hitbox |
+| [[celebration-everywhere]] | Particles, flashes, sounds — no scary game over |
+| [[unlockable-characters]] | 6 color variants unlocked via gameplay |
+| [[hidden-coins-meta-goal]] | Secret coins → unlock Rainbow Mario |

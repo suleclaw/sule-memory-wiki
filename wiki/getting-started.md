@@ -3,7 +3,7 @@ title: Getting Started
 created: 2026-04-08
 updated: 2026-04-08
 tags: [meta, documentation, getting-started]
-related: [[index]], [[SCHEMA]], [[memory-system]]
+related: [[index]], [[memory-system]]
 ---
 
 # Getting Started — Sule Memory Wiki
