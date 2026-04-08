@@ -95,17 +95,6 @@ All pages in the Sule Memory Wiki. Last updated: 2026-04-08.
 
 ---
 
-## Pages Referenced but Not Yet Created
-
-These pages are linked from existing wiki pages but don't exist yet. Create them or remove the references.
-
-| Missing Page | Referenced From | Priority |
-|-------------|----------------|----------|
-| `supabase-postgres-best-practices` | medsync-pro.md | Low |
-| `printsbytee-strategy` | suleclaw-agency.md | Low |
-
----
-
 ## Recent Activity
 
 - **2026-04-08:** Wiki cleanup — 19 broken links fixed, frontmatter errors corrected, API key removed

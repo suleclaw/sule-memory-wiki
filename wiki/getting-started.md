@@ -3,7 +3,7 @@ title: Getting Started
 created: 2026-04-08
 updated: 2026-04-08
 tags: [meta, documentation, getting-started]
-related: [[wiki/index]], [[SCHEMA]], [[memory-system]]
+related: [[index]], [[SCHEMA]], [[memory-system]]
 ---
 
 # Getting Started — Sule Memory Wiki
@@ -21,7 +21,7 @@ You don't need to maintain this manually. Just talk to Sule and it happens autom
 
 **To find something:**
 - Search this page (Ctrl+F) for quick hits
-- Browse [[wiki/index]] for all pages by category
+- Browse [[index]] for all pages by category
 - Ask Sule — she'll search and find it
 
 ## For Contributors

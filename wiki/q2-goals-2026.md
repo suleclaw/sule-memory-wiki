@@ -52,5 +52,4 @@ Every morning at 9:10 AM GMT:
 ## Related
 
 - [[morning-briefing]]
-- [[linear-projects]]
 - [[getroleup]] (potential SaaS idea)

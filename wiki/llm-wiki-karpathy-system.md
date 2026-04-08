@@ -76,7 +76,5 @@ This wiki is deployed at `suleclaw.github.io/sule-memory-wiki` via GitHub Pages 
 
 ## Related
 
-- [[ai-agent-automation]]
-- [[personal-knowledge-base]]
 - [[memory-system]]
 - [[obsidian-setup]]

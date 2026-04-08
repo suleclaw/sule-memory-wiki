@@ -61,4 +61,4 @@ Every morning at **9:10 AM GMT**, the orchestrator runs `morning-briefing.js` wh
 ## Related
 
 - [[q2-goals-2026]] — Q2 goals being briefed
-- [[HEARTBEAT.md]] — orchestrator heartbeat tasks
+- `HEARTBEAT.md` — orchestrator heartbeat tasks (internal, not a wiki page)
