@@ -36,16 +36,16 @@ Afro-Luxe fashion brand. Premium brand positioning, deep emerald/gold palette, P
 
 ## Current Gap
 
-The MVP has **no actual product photography** — all products use CSS gradient placeholders. Checkout is `mailto:` enquiry links. This is the #1 priority to fix before the site can generate real revenue.
+The MVP has **no actual product photography** — all products use CSS gradient placeholders except Laura Set — Royal Emerald which now has real photo (PR #8 merged 2026-04-10). Checkout is `mailto:` enquiry links. More product photos needed to replace remaining gradient placeholders.
 
-See: [[printsbytee-website-review-2026-04-08]] for full issue list (20 issues, 5 critical).
+See: [[printsbytee-website-review-2026-04-08]] for full issue list (20 issues, photos + checkout are critical).
 
 ---
 
 ## Next Sprint
 
-1. Get real product photography from Dami's wife
-2. Replace gradient placeholders with real photos
+1. ✅ Get real product photography from Dami's wife — first photo added (Laura Set — Royal Emerald, PR #8)
+2. Replace remaining gradient placeholders with real photos
 3. Build proper cart + Stripe checkout
 4. Create policy pages (shipping, returns, privacy)
 
