@@ -36,25 +36,33 @@ Afro-Luxe fashion brand. Premium brand positioning, deep emerald/gold palette, P
 
 ## Current Gap
 
-The MVP has **no actual product photography** — all products use CSS gradient placeholders except Laura Set — Royal Emerald which now has real photo (PR #8 merged 2026-04-10). Checkout is `mailto:` enquiry links. More product photos needed to replace remaining gradient placeholders.
+The site now has **real product photography** for 7 of 8 products (Lora Set — Red still has gradient placeholder). Checkout is `mailto:` enquiry links. This is the #1 revenue blocker remaining.
 
-See: [[printsbytee-website-review-2026-04-08]] for full issue list (20 issues, photos + checkout are critical).
+Real product catalogue (PR #9 merged 2026-04-10):
+- 5x Lora Set variants (Turquoise, Green, Red & Black, Navy Blue, Red*)
+- 1x Aso Oke Kimono Set
+- 1x Fringe Bubu
+- 1x Naya Jump Suite
+- Prices: £30–£40 (down from £185+ mock prices)
+
+See: [[printsbytee-website-review-2026-04-08]] for full issue list (20 issues, checkout is critical).
 
 ---
 
 ## Next Sprint
 
-1. ✅ Get real product photography from Dami's wife — first photo added (Laura Set — Royal Emerald, PR #8)
-2. Replace remaining gradient placeholders with real photos
+1. ✅ Get real product photography from Dami's wife — all photos added (PR #9 merged 2026-04-10)
+2. ✅ Replace gradient placeholders with real photos (Lora Set — Red still pending)
 3. Build proper cart + Stripe checkout
 4. Create policy pages (shipping, returns, privacy)
+5. Update brand positioning — prices now £30–£40 not £185+
 
 ---
 
 ## Brand
 
 - **Positioning:** Afro-Luxe — premium African-inspired fashion
-- **Price range:** £185–£205
+- **Price range:** £30–£40
 - **Target customer:** Style-conscious women who value quality and cultural authenticity
 
 ## Sub-pages
