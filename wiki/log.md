@@ -85,3 +85,15 @@ Append-only record of wiki activity.
   - Branch deleted after merge
   - SUL-52 created, SUL-51 + SUL-48 → Done
 - **2026-04-08:** PrintsbyTee website review — 20 issues documented, product photos + no checkout are critical blockers
+
+## 2026-04-11 — Agent Directory Consolidation
+
+**Problem:** Two agent directories with duplicate agents — `~/.openclaw/agents/` (18 root agents, old generic template) and `~/.openclaw/workspace/.agents/` (6 custom agents with opencode hybrid pattern). Workspace version had post-PR-7 hardening.
+
+**Action taken:**
+- All 17 applicable agents promoted to root `~/.openclaw/agents/` with the opencode hybrid pattern
+- `~/.openclaw/workspace/.agents/` deleted (backup: `~/agents-backup-20260411191454/`)
+- 6 orphaned skills moved: `brand-guidelines`, `etsy-listing`, `frontend-design`, `gstack-orchestration`, `skill-creator`, `web-design-guidelines` → `~/.openclaw/skills/`
+- Skills count: 49 → 55 installed
+
+**Pattern enforced across all agents:** SPEC.md → opencode → validate → architect gate → PR → delete branch
