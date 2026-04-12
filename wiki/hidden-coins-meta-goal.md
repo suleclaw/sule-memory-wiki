@@ -40,7 +40,7 @@ Each level has 1-2 secret coins tucked away in a tricky or hidden spot. Finding 
 - **Issue:** SUL-60
 - **Team:** Sule Orchestrator
 - **Project:** Mario Platformer
-- **Status:** Todo
+- **Status:** In Progress (SUL-60 — frontend-dev agent)
 
 ## Acceptance
 

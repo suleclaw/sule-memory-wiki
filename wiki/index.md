@@ -24,10 +24,11 @@ All pages in the Sule Memory Wiki. Last updated: 2026-04-08.
 | Page | Summary | Status |
 |------|---------|--------|
 | [[mario-platformer]] | Phaser 3 browser platformer for Dami's kids | Shipped |
-| [[super-mushroom-powerup]] | Grow power-up with forgiving hitbox | Todo |
-| [[celebration-everywhere]] | Particles, flashes, sounds — no scary game over | In Progress |
-| [[unlockable-characters]] | 6 color variants unlocked via gameplay | Todo |
-| [[hidden-coins-meta-goal]] | Secret coins → unlock Rainbow Mario | Todo |
+| [[super-mushroom-powerup]] | Grow power-up with forgiving hitbox | Done |
+| [[celebration-everywhere]] | Particles, flashes, sounds — no scary game over | Done |
+| [[unlockable-characters]] | 6 color variants unlocked via gameplay | Done |
+| [[hidden-coins-meta-goal]] | Secret coins → unlock Rainbow Mario | Done |
+| [[the-witchie-curse]] | Witch chases Mario, curse on touch, cure via mushroom | Todo |
 
 ### MedSync Pro
 | Page | Summary | Status |
