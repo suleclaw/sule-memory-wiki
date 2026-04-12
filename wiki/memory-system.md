@@ -1,68 +1,123 @@
 ---
 title: Memory System
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-12
 tags: [meta, memory, system, openclaw, context]
 related: [[llm-wiki-karpathy-system]], [[getting-started]], [[q2-goals-2026]]
 ---
 
 # Memory System
 
-How Sule (the AI assistant) maintains context and continuity across sessions.
+How Sule maintains context and continuity across sessions. Overhauled 2026-04-12.
 
 ---
 
-## Architecture
+## Architecture (Three-Layer, Karpathy Pattern)
 
-Three layers:
+Based on [Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f): raw sources → compiled wiki → schema.
 
-### 1. Wiki (`/root/sule-memory-wiki/`)
-Deployed at [suleclaw.github.io/sule-memory-wiki](https://suleclaw.github.io/sule-memory-wiki). Long-term knowledge base. Pages are created and updated by agents after sessions. Wiki is the single source of truth for cross-session context.
+### Layer 1 — Raw Sources
+Conversations, daily notes, session transcripts. Immutable input.
 
-### 2. Session Memory (`/root/sule-memory/`)
-Active context for the current session and recent history:
-- `context.md` — current session state, pending decisions, active credentials
-- `projects.md` — all project metadata (repos, URLs, Linear, Discord)
-- `integrations.md` — connected services and API keys
-- `memory/YYYY-MM-DD.md` — daily session logs
-- `MEMORY.md` — long-term curated memory (main session only)
+| Source | Location | Purpose |
+|--------|----------|---------|
+| Daily notes | `memory/YYYY-MM-DD.md` | Auto-loaded (today + yesterday) |
+| Session transcripts | `memory/.dreams/session-corpus/` | Redacted conversation text |
+| Topic archive | `memory/topic-archive/` | Superseded topic-specific notes |
 
-### 3. OpenClaw Workspace (`/root/.openclaw/workspace/`)
-System configuration, agent definitions, skills, and runtime state:
-- `AGENTS.md` — orchestrator rules
-- `SOUL.md` — assistant persona
-- `USER.md` — human profile
-- `HEARTBEAT.md` — scheduled background tasks
-- `.agents/` — sub-agent AGENTS.md files
+### Layer 2 — Compiled Knowledge
+LLM-maintained, structured, cross-referenced. Compounds over time.
 
----
+| File | Location | Updated by | Purpose |
+|------|----------|-----------|---------|
+| MEMORY.md | workspace root | Manual + Dreaming auto-promotions | **Single source of truth** for durable facts |
+| DREAMS.md | workspace root | Dreaming pipeline (3AM cron) | Human-readable dream diary for review |
+| Wiki pages | `/root/sule-memory-wiki/wiki/` | Auto after conversations | Project pages, decisions, technical refs |
+| Wiki index | `wiki/index.md` | Auto with timestamps | Catalog of all wiki pages |
+| Wiki log | `wiki/log.md` | Auto, append-only | Chronological activity log |
 
-## Session Startup Sequence
+### Layer 3 — Schema
+Configuration that tells me how to work.
 
-On every new session, the assistant reads in order:
-1. `SOUL.md` → persona
-2. `USER.md` → human profile
-3. `/root/sule-memory-wiki/wiki/index.md` → wiki changes since last session
-4. `/root/sule-memory/context.md` → current context
-5. `/root/sule-memory/projects.md` → all projects
-6. `/root/sule-memory/integrations.md` → credentials
-7. `memory/YYYY-MM-DD.md` (today + yesterday) → recent context
+| File | Purpose |
+|------|---------|
+| AGENTS.md | Rules, delegation, workflow, sub-agent routing |
+| SOUL.md | Who I am, personality, boundaries |
+| USER.md | Who you are, preferences |
+| IDENTITY.md | My name, emoji, vibe |
 
 ---
 
-## Cross-Channel Transparency
+## Memory Promotion Pipeline
 
-When work happens in a project channel (Discord), the assistant posts updates to that channel so the team stays informed. Session logs are written to `/root/sule-memory/` so any channel can see what was discussed.
+The **Dreaming** system (runs 3AM UTC):
+
+```
+Conversations → daily notes → .dreams/ short-term recall
+        ↓ (Light phase: sort & stage)
+        ↓ (REM phase: reflect on themes)
+        ↓ (Deep phase: score & promote)
+    MEMORY.md ← only the strongest facts land here
+```
+
+**Scoring signals:**
+- Frequency (0.24) — how many times seen
+- Relevance (0.30) — retrieval quality
+- Query diversity (0.15) — distinct contexts
+- Recency (0.15) — freshness decay
+- Consolidation (0.10) — multi-day recurrence
+- Conceptual richness (0.06) — concept tag density
+
+**Thresholds:** score ≥ 0.8, seen ≥ 3 times, from ≥ 3 unique queries. Only then a fact gets promoted to MEMORY.md.
+
+Review dream promotions in `DREAMS.md` periodically.
+
+---
+
+## Session Startup (Lean)
+
+1. Read `SOUL.md` — who I am
+2. Read `USER.md` — who you are
+3. Read `MEMORY.md` — durable facts (single source of truth)
+4. Read `memory/YYYY-MM-DD.md` (today + yesterday) — daily notes
+5. Use `memory_search` for everything else
+
+No more 7-file preload.
+
+---
+
+## Auto-Filing Rule
+
+After every meaningful conversation:
+1. **Daily notes** → write to `memory/YYYY-MM-DD.md`
+2. **Wiki updates** → update relevant project/decision pages
+3. **Wiki index** → update timestamps
+4. **Commit + push** → never leave wiki changes uncommitted
 
 ---
 
 ## Key Rules
 
-- Wiki changes → commit + push immediately
-- Session context → write to `/root/sule-memory/context.md` after every session
-- Credentials → never in wiki, always in `integrations.md`
-- Every project → one wiki page + one Linear project
-- Daily notes → `memory/YYYY-MM-DD.md`
+- **MEMORY.md** is the single source of truth for durable facts
+- **Wiki** is the structured knowledge layer (project pages, decisions, technical refs)
+- **Daily notes** are the raw chronological record
+- **Credentials** never go in wiki — use `${ENV_VAR}` placeholders
+- **Every project** gets one wiki page + one Linear project
+- **Dreaming promotes** to MEMORY.md automatically — review in DREAMS.md
+
+---
+
+## What Changed (2026-04-12)
+
+- **Created MEMORY.md** — was missing, dreaming had 2,638 candidates and 0 promotions
+- **Slimmed `/root/sule-memory/`** — from 213MB to 172KB (removed 212MB old AI pipeline)
+- **Consolidated context.md** — from 519 lines to 45 lines (supplementary only)
+- **Archived topic files** — 28 oddly-named files moved to `memory/topic-archive/`
+- **Updated startup** — from 7-file preload to lean 4-step sequence
+- **Filed unique docs to wiki** — PrintsbyTee payment architecture, security audit
+
+Old system: 7 files to read, 213MB duplicate store, no working promotion pipeline.
+New system: 4 files to read, structured wiki, dreaming promotes automatically.
 
 ---
 
